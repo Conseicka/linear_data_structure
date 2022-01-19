@@ -13,7 +13,7 @@ class Array:
         return str(self.items)
     
     def __iter__(self):
-        return self.iter(self.itemx)
+        return iter(self.items)
 
     def __getitem__(self, index):
         return self.items[index]
@@ -36,4 +36,5 @@ class Array:
 
 
 if __name__ == "__main__":
-    pass
+    vector = Array(5)
+    print(vector.__str__())
