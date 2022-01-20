@@ -39,16 +39,17 @@ words.insert_node_after("David", "Python")
 
 #words.delete_by_index(3)
 
-counter = 0
-for word in words.iter():
-    print(word)
-    counter += 1
-
-print("-----"* 20)
 
 words.insert_node_by_index(2,"Leona")
 
-counter = 0
+#words.make_circ()
+
+
 for word in words.iter():
     print(word)
-    counter += 1
+print("-----"* 20)
+
+words.make_circ()
+
+head = words.scan("Green Day")
+print(head.next.data)

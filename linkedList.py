@@ -27,7 +27,14 @@ class SinglyLinkedList:
             current.next = node
 
         self.size += 1
-    
+
+
+    def make_circ(self):
+        head = self.tail
+        while head != None:
+            probe = head
+            head = head.next
+        probe.next = self.tail
 
 
     def size(self):
