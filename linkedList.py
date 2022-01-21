@@ -40,6 +40,7 @@ class SinglyLinkedList:
     def size(self):
         return str(self.size)
 
+
     def iter(self):
         current = self.tail
 
@@ -48,7 +49,6 @@ class SinglyLinkedList:
             current = current.next
             yield val
         
-
 
     def search(self, target_item):
         head = self.tail
